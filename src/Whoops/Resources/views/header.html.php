@@ -50,7 +50,7 @@
       </li>
       <?php endif ?>
       <li>
-        <a rel="noopener noreferrer" target="_blank" href="https://google.com/search?q=<?php echo urlencode(implode('\\', $name).' '.$message) ?>" title="Search for help on Google.">
+        <a rel="noopener noreferrer" target="_blank" href="https://google.com/search?q=<?php echo urlencode($message) ?>" title="Search for help on Google.">
           <!-- Google icon by Alfredo H, from https://www.iconfinder.com/alfredoh -->
           <!-- Creative Commons (Attribution 3.0 Unported) -->
           <!-- http://creativecommons.org/licenses/by/3.0/ -->
@@ -60,7 +60,7 @@
         </a>
       </li>
       <li>
-        <a rel="noopener noreferrer" target="_blank" href="https://duckduckgo.com/?q=<?php echo urlencode(implode('\\', $name).' '.$message) ?>" title="Search for help on DuckDuckGo.">
+        <a rel="noopener noreferrer" target="_blank" href="https://duckduckgo.com/?q=<?php echo urlencode(implode($message) ?>" title="Search for help on DuckDuckGo.">
           <!-- DuckDuckGo icon by IconBaandar Team, from https://www.iconfinder.com/iconbaandar -->
           <!-- Creative Commons (Attribution 3.0 Unported) -->
           <!-- http://creativecommons.org/licenses/by/3.0/ -->
@@ -74,12 +74,21 @@
         </a>
       </li>
       <li>
-        <a rel="noopener noreferrer" target="_blank" href="https://stackoverflow.com/search?q=<?php echo urlencode(implode('\\', $name).' '.$message) ?>" title="Search for help on Stack Overflow.">
+        <a rel="noopener noreferrer" target="_blank" href="https://stackoverflow.com/search?q=<?php echo urlencode($message) ?>" title="Search for help on Stack Overflow.">
           <!-- Stack Overflow icon by Picons.me, from https://www.iconfinder.com/Picons -->
           <!-- Free for commercial use -->
           <svg class="stackoverflow" height="16" viewBox="-1163 1657.697 56.693 56.693" width="16" xmlns="http://www.w3.org/2000/svg">
             <path d="M-1126.04 1689.533l-16.577-9.778 2.088-3.54 16.578 9.778zM-1127.386 1694.635l-18.586-4.996 1.068-3.97 18.586 4.995zM-1127.824 1700.137l-19.165-1.767.378-4.093 19.165 1.767zM-1147.263 1701.293h19.247v4.11h-19.247z"/>
             <path d="M-1121.458 1710.947s0 .96-.032.96v.016h-30.796s-.96 0-.96-.016h-.032v-20.03h3.288v16.805h25.244v-16.804h3.288v19.07zM-1130.667 1667.04l10.844 15.903-3.396 2.316-10.843-15.903zM-1118.313 1663.044l3.29 18.963-4.05.703-3.29-18.963z"/>
+          </svg>
+        </a>
+      </li>
+          <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.baidu.com/s?wd=<?php echo urlencode($message) ?>" title="Search for help on Stack Overflow.">
+          <!-- Stack OverflowBaidu icon by Picons.me, from https://www.iconfinder.com/Picons -->
+          <!-- Free for commercial use -->
+            <svg class="baidu" height="16" viewBox="0 0 512 512" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M843.4,593.6c54.4,14.8,116.2-44.5,138.5-131c22.3-86.5-2.5-168.1-56.9-183c-54.4-14.8-116.2,44.5-138.5,131C764.3,497.1,789,578.7,843.4,593.6L843.4,593.6z M383.5,373.5c54.4-9.9,89-86.5,74.2-175.5c-14.8-89-69.2-153.3-126.1-143.4c-54.4,9.9-89,86.5-74.2,175.5S329.1,383.4,383.5,373.5L383.5,373.5z M161,591.1c54.4-14.8,76.6-96.4,51.9-183c-24.7-86.5-89-143.4-140.9-128.6C17.6,294.4-4.7,376,20,462.5C44.8,551.5,106.6,608.4,161,591.1L161,591.1z M620.9,373.5c54.4,7.4,111.3-56.9,123.6-145.9c12.4-89-22.3-165.7-76.6-173.1c-54.4-7.4-111.3,56.9-123.6,145.9C529.4,289.4,564,366.1,620.9,373.5L620.9,373.5z M304.4,605.9c69.2-91.5,79.1-183,197.8-183c140.9,0,150.8,111.3,202.7,183c51.9,71.7,239.8,123.6,148.3,274.4c-89,148.4-242.3-22.3-351.1-22.3c-108.8,0-276.9,183-353.6,22.3C67,719.7,220.3,714.7,304.4,605.9L304.4,605.9z"></path>
           </svg>
         </a>
       </li>
